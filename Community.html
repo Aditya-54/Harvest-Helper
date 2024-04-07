@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Social app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/e5fcab2af9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Community.css') }}">
+</head>
+
+<body>
+    <div id="container_main">
+        <div id="sub_container">
+            <!--START OF THE HEADER AREA-->
+            <div id="header_box">
+                <header id="header_main">
+                    <div class="header_content_one">
+                        <a href="" class="img_logo"><img src="{{ url_for('static', filename='logo.svg') }}" alt="logo" class="logo"></a>
+                        <input type="search" class="search_input" name="search" placeholder="Search">
+                    </div>
+                    <div class="header_content_two">
+                        <div class="header_icon"><a href=""><i class="fa-solid fa-message gray"></i></a></div>
+                        <div class="header_icon"><a href=""><i class="fa-solid fa-gear gray"></i></a></div>
+                        <div class="header_icon"><a href=""><i class="fa-solid fa-bell gray"></i></a></div>
+                    </div>
+                </header>
+            </div>
+            <!--END OF THE HEADER AREA-->
+
+            <!--START OF THE MAIN BOX BELOW THE HEADER-->
+            <div id="entire_layout">
+                <div id="main_layout">
+                    <!--START OF THE FIRST BOX INSIDE THE FLEX BLOX-->
+                    <div id="first_box" class="box">
+                        <div class="first_halve">
+                            <div class="second_halve">
+                                <ul class="navigation">
+                                    <li class="nav_link"><a href="" class="nav_l"><img src="{{ url_for('static', filename='home-outline-filled.svg') }}" class="img_icon">Home</a></li>
+                                    <li class="nav_link"><a href="" class="nav_l"><img src="{{ url_for('static', filename='person-outline-filled.svg') }}" class="img_icon">Connections</a></li>
+                                    <li class="nav_link"><a href="" class="nav_l"><img src="{{ url_for('static', filename='earth-outline-filled.svg') }}" class="img_icon">Latest news</a></li>
+                                    <li class="nav_link"><a href="" class="nav_l"><img src="{{ url_for('static', filename='calendar-outline-filled.svg') }}" class="img_icon">Events</a></li>
+                                    <li class="nav_link"><a href="" class="nav_l"><img src="{{ url_for('static', filename='chat-outline-filled.svg') }}" class="img_icon">Groups</a></li>
+                                    <li class="nav_link"><a href="" class="nav_l"><img src="{{ url_for('static', filename='notification-outlined-filled.svg') }}" class="img_icon">Notification</a></li>
+                                    <li class="nav_link"><a href="" class="nav_l"><img src="{{ url_for('static', filename='cog-outline-filled.svg') }}" class="img_icon">Settings</a></li>
+                                </ul>
+                            </div>
+                            <hr>
+                            <span class="more_on_acct"><a href="" class="bav_l">View Profile</a></span>
+                        </div>
+                        <div id="footer_area">
+                            <a href="" class="foot_link">About</a>
+                            <a href="" class="foot_link">Setting</a>
+                            <a href="" class="foot_link">Support</a>
+                            <a href="" class="foot_link">Docs</a>
+                            <a href="" class="foot_link">Help</a>
+                            <a href="" class="foot_link">Privacy & terms</a>
+                            <p class="copyright">&copy; Ifeoluwa Isaiah Clone</p>
+                        </div>
+                    </div>
+                    <!--END OF THE FIRST SECTION INSIDE THE FLEX BLOX-->
+
+                    <!--START OF SECOND BOX INSIDE THE FLEX BOX-->
+                    <div id="second_box" class="box">
+                        <div class="box_one">
+                            <div class="comment_box">
+                                <div class="flex_comment">
+                                    <span class="user"></span>
+                                    <input type="text" name="comment thoughts" class="text_input" placeholder="Share your thoughts...">
+                                </div>
+                                <div class="comment_icons">
+                                    <span class="c_icons"><a href="" class="link"><i class="fa-solid fa-image green"></i> Photo</a></span>
+                                    <span class="c_icons"><a href="" class="link"><i class="fa-solid fa-video blue"></i> Video</a></span>
+                                    <span class="c_icons"><a href="" class="link"><i class="fa-regular fa-calendar red"></i> Event</a></span>
+                                    <span class="c_icons"><a href="" class="link"><i class="fa-solid fa-face-smile yellow"></i> Feeling/Activity</a></span>
+                                    <!-- <span class="float_icon"><a href="" class="link"><i class="fa-solid fa-ellipsis"></i></a></span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box_two">
+                            <div class="first_post">
+                                <hr>
+                            </div>
+                            <div class="first_post">
+                                <hr>
+                            </div>
+                            <div class="first_post">
+                                <div class="entire_acct"></div>
+                            </div>
+                            <div class="first_post">
+                                <div class="elem_one">
+                                    <div class="profile_details"></div>
+                                </div>
+                                <hr>
+                                <div class="interaction">
+                                    <div class="sec"></div>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="first_post">
+                                <div class="elem_one"></div>
+                                <hr>
+                                <div class="interaction">
+                                    <span><a href="" class="like btn"><i class="fa-regular fa-heart"></i> Like (56)</a></span>
+                                    <span class="share"><a href="" class=" btn"><i class="fa-solid fa-share"></i> Share (3)</a></span>
+                                    <div class="sec">
+                                        <span><a href="" class="send btn"><i class="fa-solid fa-paper-plane"></i> Send</a></span>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="first_post">
+                                <hr>
+                                <p class="caption">The next-generation blog, news, and magazine theme for you to start sharing your content today with beautiful aesthetics! This minimal & clean Bootstrap 5 based theme is ideal for all types of sites that aim to provide users with content <a href="" class="blue">@bootstrap</a>. <a href="" class="blue">#bootstrap</a> <a href="" class="blue"> #webestica</a> <a href="" class="blue">#internship</a> <a href="" class="blue">#getbootstrap</a> <a href="" class="blue">#bootstrap5</a></p>
+                                <div class="post">
+                                    <img src="{{ url_for('static', filename='03.jpg') }}" alt="feed post" class="feed_post">
+                                </div>
+                                <div class="action backg">
+                                    <span class="link"><a href="" class="blue">https://blogzine.webestica.com</a></span><br>
+                                    <span class="light"><a href="" class="bold">Blogize - Blog and Magazine Bootstrap 5</a><br> Bootstarp based News, Magazine and Blog Theme</span>
+                                </div>
+                                <div class="interaction">
+                                    <span><a href="" class="like btn"><i class="fa-regular fa-heart"></i> Like (56)</a></span>
+                                    <span class="share"><a href="" class=" btn"><i class="fa-solid fa-share"></i> Share (3)</a></span>
+                                    <div class="sec">
+                                        <span><a href="" class="send btn"><i class="fa-solid fa-paper-plane"></i> Send</a></span>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="first_post">
+                                <div class="elem_one"></div>
+                                <div class="interaction">
+                                    <span><a href="" class="like btn"><i class="fa-regular fa-heart"></i> Like (56)</a></span>
+                                    <span class="share"><a href="" class=" btn"><i class="fa-solid fa-share"></i> Share (3)</a></span>
+                                    <div class="sec">
+                                        <span><a href="" class="send btn"><i class="fa-solid fa-paper-plane"></i> Send</a></span>
+                                    </div>
+                                </div>
+                                <div class="comment_replies">
+                                    <div class="comment_field">
+                                        <span class="user"></span>
+                                        <input type="text" name="comment thoughts" class="comment_input" placeholder="Add a comment...">
+                                    </div>
+                                    <div class="comment_field">
+                                        <span class="user user2"></span>
+                                        <div class="user_comments">
+                                            <div class="flex">
+                                                <h4>Joan Wallace</h4>
+                                                <span class="time_posted">4hr</span>
+                                            </div>
+                                            <p class="text">Removed demands expense account in outward tedious do. Particular way thoroughly unaffected projection.</p>
+                                        </div>
+                                    </div>
+                                    <div class="comment_controls">
+                                        <span><a href="" class="control">Like (3)</a></span>
+                                        <span><a href="" class="control">Reply</a></span>
+                                        <span><a href="" class="control">View 5 replies</a></span>
+                                    </div>
+                                    <div class="comment_field field_reply">
+                                        <span class="user user4"></span>
+                                        <div class="user_comments_reply user_comments">
+                                            <div class="flex">
+                                                <h4>Billy Vasquez</h4>
+                                                <span class="time_posted">15min</span>
+                                            </div>
+                                            <p class="text">Wishing calling is warrant settled was lucky.</p>
+                                        </div>
+                                    </div>
+                                    <div class="comment_controls sec_cont">
+                                        <span><a href="" class="control">Like</a></span>
+                                        <span><a href="" class="control">Reply</a></span>
+                                    </div>
+                                </div>
+                                <div class="load_more marg"><a href=""><i class="fa-solid fa-ellipsis"></i> Load more comments</a></div>
+                            </div>
+                            <button class="add load_more">Load more</button>
+                        </div>
+                    </div>
+                    <!--End OF SECOND BOX INSIDE THE FLEX BOX-->
+
+                    <!--START OF THIRD BOX INSIDE THE FLEX BOX-->
+                    <div id="third_box" class="box">
+                        <div class="suggested_box">
+                            <h2>Wheather</h2>
+                        </div>
+                        <div class="article_box">
+                            <h2>Today’s news</h2>
+                            <div class="article">
+                                <a href="" class="headline">Ten questions you should answer truthfully</a>
+                                <span class="hour">2hr</span>
+                            </div>
+                            <div class="article">
+                                <a href="" class="headline">Five unbelievable facts about money</a>
+                                <span class="hour">3hr</span>
+                            </div>
+                            <div class="article">
+                                <a href="" class="headline">Best Pinterest Boards for learning about business</a>
+                                <span class="hour">4hr</span>
+                            </div>
+                            <div class="article">
+                                <a href="" class="headline">Skills that you can learn from business</a>
+                                <span class="hour">6hr</span>
+                            </div>
+                            <div class="more_stories">
+                                <span class="icon"><i class="fa-solid fa-ellipsis"></i></span>
+                                <a href="" class="more_arti">View all latest news</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--END OF THIRD BOX INSIDE THE FLEX BOX-->
+                </div>
+            </div>
+            <!--END OF THE MAIN BOX BELOW THE HEADER-->
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harvest Helper</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <h2 class="logo"><a href="#"><img src="{{ url_for('static', filename='logo.png') }}" alt="logo" id="logo-img"></a></h2>
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" id="hamburger-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                    <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </label>
+            <ul class="links">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+                <li><a href="/community">Community Tab</a></li>
+            </ul>
+            <div class="buttons">
+                <a href="/sign_in" class="signin">Sign In</a>
+                <a href="/signup" class="signup">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+    <section class="hero-section">
+        <div class="hero">
+            <h2>Harvest Helper</h2>
+            <p>
+                Step into the world of farming excellence with HarvestHelper. 
+                From seasoned growers to newcomers in the field,
+                we're here to provide the expertise and technology you need to thrive. 
+                Join us as we revolutionize farming practices and empower farmers for a sustainable future.
+            </p>
+            <div class="buttons">
+                <a href="/signup" class="join">Join Now</a>
+                <a href="/about" class="learn">Learn More</a>
+            </div>
+        </div>
+        <div class="img">
+            <!-- You can add your image here -->
+        </div>
+    </section>
+</body>
+</html>

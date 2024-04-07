@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create a Post</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='post.css') }}">
+</head>
+<body>
+    <div class="create-post">
+        <form>
+            <div class="container">
+                <h1>Create a Post</h1>
+                <hr>
+                <label for="title"><b>Title:</b></label>
+                <input type="text" placeholder="Enter Title" name="title" id="title" required>
+
+                <label for="psw"><b>Description:</b></label>
+                <input type="text" placeholder="Enter Description" name="psw" id="psw" required>
+
+                <label for="file-upload"><b>Choose a file:</b></label>
+                <label class="file">
+                    <input type="file" id="file" aria-label="File browser example">
+                    <span class="file-custom"></span>
+                </label>
+
+                <button type="submit" class="submitbtn">SUBMIT</button>
+            </div>
+        </form> 
+    </div>
+</body>
+</html>

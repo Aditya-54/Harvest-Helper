@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <!-- Font Awesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <!-- Use url_for to include CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='services.css') }}" />
+</head>
+<body>
+    <section>
+        <div class="row">
+            <h2 class="section-heading">Our Services</h2>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Personalized Crop Selection Guidance</h3>
+                    <p>
+                        Our expert agronomists provide personalized crop selection guidance based on factors such as soil type, climate conditions,
+                        market demand, and your specific farming goals.
+                    </p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-brush"></i>
+                    </div>
+                    <h3>Pest and Disease Management Solutions</h3>
+                    <p>
+                        Protect your crops from pests and diseases with our integrated 
+                        pest and disease management solutions.
+                    </p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3>Irrigation and Water Management</h3>
+                    <p>
+                        Maximize water efficiency and conserve resources with our tailored irrigation 
+                        recommendations and water management solutions.
+                    </p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-truck-pickup"></i>
+                    </div>
+                    <h3>Consultation and Support</h3>
+                    <p>
+                        Whether you have questions about crop management or any other aspect of farming,
+                        Reach to experts on our platform for their consultation and support.
+                    </p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-broom"></i>
+                    </div>
+                    <h3>Beginner-Friendly Interface</h3>
+                    <p>
+                        Our platform features a user-friendly interface designed with beginners in mind. With intuitive navigation, 
+                        clear instructions, and helpful tooltips.
+                    </p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3>Assisted AI for Farming</h3>
+                    <p>
+                        Harness the power of artificial intelligence for farming 
+                        decision support with our Assisted AI service. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
